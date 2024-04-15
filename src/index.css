@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.logo__wrapper {
+  height: 200px;
+  width: 200px;
+  padding: 50px 30px 0 0;
+}
+
+.App {
+  padding: 0 0 0 10px;
+  margin:  150px 0 0 500px;
+  text-align: center;
+}
+div {
+  display: grid;
+  gap: 10px;
+  padding: 5px 0 0;
+}
+.main_wrapper {
+  display: flex;
+}
+.bottom_wrapper {   
+  width: 20px;
+}
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.loginPage__wrapper {
+  width: 100%;
+  padding: 0 10px;
+  background-color:rgba(126, 5, 240, 0.863);
+  border-radius: 5px;
+}
+.signUP__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin:0 4px;
+}
+.forgetpassword__wrapper {
+  padding: 10px 10px;
+}
