@@ -51,7 +51,7 @@ export function useCreateAccount() {
       };
       try {
         const response = await axios.post(`${API_URL}empData`, payload);
-        console.log("Data submitted:", response.data);
+        console.log("Data submitted:", response.config.data);
         navigate("/empData");
       } catch (error) {
         console.error("error", error);

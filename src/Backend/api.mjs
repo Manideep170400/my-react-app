@@ -5,8 +5,10 @@ const { SignUp } = schema.param();
 function info(app) {
   app.post("/empData", async (req, res) => {
     try {
-      const response = await SignUp.create(req.body);
-      res.status(200).json(response);
+      console.log("createAccount", req.body);
+      const newData = await SignUp.create(req.body);
+      console.log(newData);
+      res.send(newData);
     } catch (error) {
       console.error("Error:", error);
       res.status(500).json({ error: "Failed to save data" });
@@ -15,8 +17,10 @@ function info(app) {
 
   app.post("/createAccount", async (req, res) => {
     try {
-      const response = await SignUp.create(req.body);
-      res.status(201).json(response);
+      console.log("createAccount", req.body);
+      const newData = await SignUp.create(req.body);
+      console.log(newData);
+      res.send(newData);
     } catch (error) {
       console.error("Error:", error);
       res.status(500).json({ error: "Failed to create account" });
